@@ -11,4 +11,5 @@ COPY . /angular
 
 #Angular CLI
 RUN npm install -g @angular/cli;
-#RUN ng serve;
+RUN npm install --save-dev @angular-devkit/build-angular;
+RUN ng serve;
