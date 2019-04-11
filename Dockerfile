@@ -13,5 +13,5 @@ COPY . /angular
 RUN npm install -g @angular/cli;
 RUN npm install --save-dev @angular-devkit/build-angular;
 
-EXPOSE 4200;
-ENTRYPOINT ["/bin/bash", "-c", "ng serve"];
+EXPOSE 80
+ENTRYPOINT ["/bin/bash", "-c", "ng serve --port 80"]
