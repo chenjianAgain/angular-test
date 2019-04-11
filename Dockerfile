@@ -12,4 +12,6 @@ COPY . /angular
 #Angular CLI
 RUN npm install -g @angular/cli;
 RUN npm install --save-dev @angular-devkit/build-angular;
-RUN ng serve;
+
+EXPOSE 4200;
+ENTRYPOINT ["/bin/bash", "-c", "ng serve"];
