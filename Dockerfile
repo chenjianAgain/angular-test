@@ -10,4 +10,5 @@ WORKDIR /angular
 COPY . /angular
 
 #Angular CLI
-RUN npm install -g @angular/cli
+RUN npm install -g @angular/cli;
+RUN ng serve;
