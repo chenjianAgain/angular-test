@@ -11,4 +11,4 @@ COPY . /angular
 
 #Angular CLI
 RUN npm install -g @angular/cli;
-RUN ng serve;
+#RUN ng serve;
